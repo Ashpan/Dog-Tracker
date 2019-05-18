@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dog Tracker</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+		<link rel="stylesheet" href="/css/styles.css"></link>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="/js/note.js?1"></script>
+	</head>
+	<body onload="load()">
+		<div style="text-align: center;">
+			<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8">
+			<h1>Add Notes</h1>
+					<form>
+						<div class="form-group">
+						    <input type="text" class="form-control" id="topic" placeholder="Topic/Subject">
+					  	</div>
+				  	</form>
+					<form>
+						<div class="form-group">
+						    <input type="text" class="form-control" id="note" placeholder="Note">
+					  	</div>
+				  	</form>
+				<button type="button" class="btn btn-success" onclick="addNotesData()">Add Note!</button>
+			</div>
+		<div class="col-2"></div>
+		</div>
+			<br>
+		<div style="text-align: center; font-size: 120%;">
+		<table class="table" id="myTable">
+			  <thead>
+			    <tr>
+			      <th scope="col">Date</th>
+			      <th scope="col">Time</th>
+			      <th scope="col">Topic</th>
+			      <th scope="col">Note</th>
+			    </tr>
+			  </thead>
+			</table>
+		</div>
+			</div>
+
+	</body>
+</html>
